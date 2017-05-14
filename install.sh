@@ -2,37 +2,16 @@
 
 # Install packages
 echo "Installing Packages...."
-sudo apt-get install
-	git,
-	software-properties-common,
-	python-software-properties,
-	libbsd-dev,
-	libfuse2,
-	pkg-config,
-	build-essential, 
-	libfuse-dev,
-	libsqlite3-dev,
-	python-pip,
-	ibssl-dev,
-	vim,
-	curl,
-	tmux,
-	cpufrequtils,
-	iptables,
-	ssh,
-	ruby,
-	ruby-dev,
-	libpq-dev,
-	nodejs,
-	npm,
-	vi,
+sudo apt-get install git software-properties-common python-software-properties libbsd-dev libfuse2 pkg-config -y
+sudo apt-get install build-essential libfuse-dev libsqlite3-dev python-pip ibssl-dev vim curl tmux -y
+sudo apt-get install cpufrequtils iptables ssh ruby ruby-dev libpq-dev nodejs npm -y
 
 sudo apt install
 	screenfetch
 
 echo "Installing Python Packages..."
 sudo pip install --upgrade pip
-sudo pip install bottle, pyyaml
+sudo pip install bottle pyyaml -y
 
 echo "Installing Ruby..."
 \curl -sSL https://get.rvm.io | bash -s stable --ruby
@@ -43,8 +22,8 @@ gem install bundler
 echo "Installing Heroku..."
 sudo add-apt-repository "deb https://cli-assets.heroku.com/branches/stable/apt ./"
 curl -L https://cli-assets.heroku.com/apt/release.key | sudo apt-key add -
-sudo apt-get update
-sudo apt-get install heroku
+sudo apt-get update -y
+sudo apt-get install heroku -y
 
 echo "Copying Dotfiles..."
 cp .bashrc ~/.bashrc
