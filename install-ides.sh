@@ -21,4 +21,11 @@ sudo tar -xzf $IDEA
 echo "Extracting Android Studio Zip"
 sudo unzip $ANDROID
 
+echo "Removing WebStorm Tar..."
+sudo rm $WEBSTORM
+echo "Removing Idea Tar..."
+sudo rm $IDEA
+echo "Removing Android Studio zip..."
+sudo rm $ANDROID
+
 echo "Done!"
