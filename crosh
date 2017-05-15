@@ -1,0 +1,11 @@
+# XTerm Colors
+
+["#002b36","#dc322f","#859900","#b58900","#268bd2","#d33682","#2aa198","#eee8d5","#002b36","#cb4b16","#859900","#b58900","#268bd2","#6c71c4","#2aa198","#fdf6e3"]
+
+# Background Color
+"#002b36"
+
+# Reset Known Hosts
+# Ctrl+Shift+J
+# Then
+term_.command.removeAllKnownHosts()
