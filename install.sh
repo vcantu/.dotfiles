@@ -2,12 +2,9 @@
 
 # Install packages
 echo "Installing Packages...."
-sudo apt-get install git software-properties-common python-software-properties libbsd-dev libfuse2 pkg-config -y
+sudo apt-get install vim software-properties-common python-software-properties libbsd-dev libfuse2 pkg-config -y
 sudo apt-get install build-essential libfuse-dev libsqlite3-dev python-pip ibssl-dev vim curl tmux -y
 sudo apt-get install cpufrequtils iptables ssh ruby ruby-dev libpq-dev nodejs npm -y
-
-sudo apt install
-	screenfetch
 
 echo "Installing Python Packages..."
 sudo pip install --upgrade pip
@@ -37,3 +34,9 @@ sudo cp colors /usr/bin/colors
 # TODO: Install  Android Studio
 
 echo "Remember to uncomment en_US.UTF-8 UTF-8 in /etc/locale.gen"
+echo " then run sudo locale-gen"
+source "~/.bashrc"
+
+echo "Updating git credentials"
+git config --global user.email "viviano.cantu@gmail.com"
+git config --global user.name "Viviano Cantu"
