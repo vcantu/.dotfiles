@@ -5,7 +5,17 @@
 # Background Color
 "#002b36"
 
-# Reset Known Hosts
+# Reset Known SSH Hosts
 # Ctrl+Shift+J
 # Then
 term_.command.removeAllKnownHosts()
+
+
+
+# Setting Up Aliases in crosh
+# copy and paste these commands
+
+echo "alias enter=\"sudo enter-chroot -n ubuntu\"" >> ~/.bashrc
+echo "alias start=\"sudo startxiwi\"" >> ~/.bashrc
+echo "alias ssh=\"sudo enter-chroot -b sshstart\"" >> ~/.bashrc
+echo "alias killall=\"sudo unmount-chroot -fay\"" >> ~/.bashrc
