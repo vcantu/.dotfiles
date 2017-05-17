@@ -1,5 +1,13 @@
 #!/bin/bash
 
+echo "Copying Dotfiles..."
+cp .bashrc ~/.bashrc
+cp .tmux.conf ~/.tmux.conf
+tmux source-file ~/.tmux.conf
+
+sudo cp sshstart /usr/local/bin/sshstart
+sudo cp colors /usr/bin/colors
+
 # Install packages
 echo "Installing Packages...."
 sudo apt-get install vim software-properties-common python-software-properties libbsd-dev libfuse2 pkg-config -y
@@ -22,14 +30,6 @@ sudo add-apt-repository "deb https://cli-assets.heroku.com/branches/stable/apt .
 curl -L https://cli-assets.heroku.com/apt/release.key | sudo apt-key add -
 sudo apt-get update -y
 sudo apt-get install heroku -y
-
-echo "Copying Dotfiles..."
-cp .bashrc ~/.bashrc
-cp .tmux.conf ~/.tmux.conf
-tmux source-file ~/.tmux.conf
-
-sudo cp sshstart /usr/local/bin/sshstart
-sudo cp colors /usr/bin/colors
 
 echo "Installing Mongo db..."
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10
