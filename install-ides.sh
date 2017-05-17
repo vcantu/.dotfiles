@@ -6,7 +6,15 @@ ANDROID="android-studio-ide-162.3934792-linux.zip"
 echo " - $WEBSTORM"
 echo " - $IDEA"
 echo " - $ANDROID"
-echo "Do you have these files in your ~/Downloads foler?(y/n)" choice
+read -p "Do you have these files in your ~/Downloads foler?(y/n)" -n 1 -r
+if [[ ! $REPLY =~ ^[Yy]$ ]]
+then
+    echo "Install the files from these links then try again: "
+    echo "WebStorm:        https://www.jetbrains.com/webstorm/download/#section=linux"
+    echo "IntelliJ:        https://www.jetbrains.com/idea/download/"
+    echo "Android Studio:  https://developer.android.com/studio/index.html"
+    [[ "$0" = "$BASH_SOURCE" ]] && exit 1 || return 1 # exits
+fi
 
 cd ~/Downloads
 
