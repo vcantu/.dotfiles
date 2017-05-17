@@ -5,6 +5,7 @@ echo "Installing Packages...."
 sudo apt-get install vim software-properties-common python-software-properties libbsd-dev libfuse2 pkg-config -y
 sudo apt-get install build-essential libfuse-dev libsqlite3-dev python-pip ibssl-dev vim curl tmux -y
 sudo apt-get install cpufrequtils iptables ssh ruby ruby-dev libpq-dev nodejs npm -y
+sudo apt-get install python3 python3-xdg -y
 
 echo "Installing Python Packages..."
 sudo pip install --upgrade pip
