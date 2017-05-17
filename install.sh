@@ -39,10 +39,10 @@ sudo apt-get -y --no-install-recommends install adduser mongodb-org
 sudo mkdir /data
 sudo mkdir /data/db
 
-echo "Remember to uncomment en_US.UTF-8 UTF-8 in /etc/locale.gen"
-echo " then run sudo locale-gen"
-source "~/.bashrc"
-
 echo "Updating git credentials"
 git config --global user.email "viviano.cantu@gmail.com"
 git config --global user.name "Viviano Cantu"
+
+echo "Remember to uncomment en_US.UTF-8 UTF-8 in /etc/locale.gen"
+echo " then run sudo locale-gen"
+. ~/.bashrc
