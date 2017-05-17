@@ -3,6 +3,11 @@ WEBSTORM="WebStorm-2017.1.2.tar.gz"
 IDEA="ideaIU-2017.1.2.tar.gz"
 ANDROID="android-studio-ide-162.3934792-linux.zip"
 
+echo " - $WEBSTORM"
+echo " - $IDEA"
+echo " - $ANDROID"
+echo "Do you have these files in your ~/Downloads foler?(y/n)" choice
+
 cd ~/Downloads
 
 echo "Copying WebStorm Tar..."
