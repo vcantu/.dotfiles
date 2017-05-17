@@ -19,3 +19,5 @@ echo "alias enter=\"sudo enter-chroot -n ubuntu\"" >> ~/.bashrc
 echo "alias start=\"sudo startxiwi\"" >> ~/.bashrc
 echo "alias ssh=\"sudo enter-chroot -b sshstart\"" >> ~/.bashrc
 echo "alias killall=\"sudo unmount-chroot -fay\"" >> ~/.bashrc
+echo "alias tab=\"sudo startxiwi -T\"" >> ~/.bashrc
+echo "alias xorg=\"sudo enter-chroot -X xorg xinit\"" >> ~/.bashrc
