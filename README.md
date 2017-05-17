@@ -35,3 +35,7 @@ I commonly use [Android Studio](http://developer.android.com/studio/index.html) 
 (For now) the installation script requires that you download the tars from the links and place them in your ~/Downloads folder.
 
 Also also make sure the names of the variables at the top of the script match the names of the files you downloaded
+
+
+## crosh
+Contains some commands to customize the ChromeOS Shell (crosh) and some preferences for the [Secure Shell App](https://chrome.google.com/webstore/detail/secure-shell/pnhechapfaindjhompbnflcldabbghjo?hl=en)
