@@ -15,7 +15,7 @@ cp ~/.config/i3/config .
 
 
 echo "Saving to GitHub..."
-dt=$(date '+%dd/%mm/%Y %H:%M:%S');
+dt=$(date '+%d/%m/%Y %H:%M:%S');
 git add .
 git commit -m "autobackup $dt"
 git push origin master
