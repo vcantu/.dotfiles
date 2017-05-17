@@ -30,8 +30,13 @@ tmux source-file ~/.tmux.conf
 sudo cp sshstart /usr/local/bin/sshstart
 sudo cp colors /usr/bin/colors
 
-# TODO: Install  Intellij IDEA
-# TODO: Install  Android Studio
+echo "Installing Mongo db..."
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10
+echo 'deb http://downloads-distro.mongodb.org/repo/debian-sysvinit dist 10gen' | sudo tee /etc/apt/sources.list.d/mongodb.list
+sudo apt-get update -y
+sudo apt-get -y --no-install-recommends install adduser mongodb-org
+sudo mkdir /data
+sudo mkdir /data/db
 
 echo "Remember to uncomment en_US.UTF-8 UTF-8 in /etc/locale.gen"
 echo " then run sudo locale-gen"
