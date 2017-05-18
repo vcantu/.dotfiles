@@ -7,7 +7,7 @@ cd
 sudo apt-get install git
 mkdir Projects
 cd Projects
-git clone https://github/vcantu/dotfiles.git
+git clone https://github.com/vcantu/dotfiles.git
 ```
 
 Then run any or all of the installation scripts:
