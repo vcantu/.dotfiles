@@ -1,4 +1,5 @@
 #!/bin/bash
+cd ~/Projects/dotfiles
 
 echo "Backing up .bashrc..."
 cp ~/.bashrc .
