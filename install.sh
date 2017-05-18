@@ -8,6 +8,11 @@ sudo apt-get install cpufrequtils iptables ssh ruby ruby-dev libpq-dev nodejs np
 sudo apt-get install python3 python3-xdg -y
 sudo appt-get install openjdk-8-jdk -y
 
+echo "Installing Grive"
+sudo add-apt-repository ppa:nilarimogard/webupd8 -y
+sudo apt-get update -y
+sudo apt-get install grive -y
+
 echo "Installing Python Packages..."
 sudo pip install --upgrade pip
 sudo pip install bottle pyyaml -y
