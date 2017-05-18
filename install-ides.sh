@@ -41,4 +41,7 @@ sudo rm $IDEA
 echo "Removing Android Studio zip..."
 sudo rm $ANDROID
 
+echo "Remember to call \"sudo chown -R $USER:$USER /opt/FOLDER\" for every IDE"
+echo "   This will allow it to update itself"
+
 echo "Done!"
