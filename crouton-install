@@ -1,1 +1,0 @@
-sudo sh ~/Downloads/crouton -r yakkety -n ubuntu -t core,xiwi,xorg,keyboard,cli-extra,audio,extension,touch

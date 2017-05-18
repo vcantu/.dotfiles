@@ -42,15 +42,6 @@ echo "Updating git credentials"
 git config --global user.email "viviano.cantu@gmail.com"
 git config --global user.name "Viviano Cantu"
 
-echo "Copying Dotfiles..."
-cp .bashrc ~/.bashrc
-cp .tmux.conf ~/.tmux.conf
-tmux source-file ~/.tmux.conf
-
-sudo cp sshstart /usr/local/bin/sshstart
-sudo cp colors /usr/local/bin/colors
-sudo cp gsync /usr/local/bin/gsync
-
 echo "Remember to uncomment en_US.UTF-8 UTF-8 in /etc/locale.gen"
 echo " then run sudo locale-gen"
 . ~/.bashrc
