@@ -17,7 +17,6 @@ sudo apt-get install grive -y
 echo "Installing Python Packages..."
 sudo pip install --upgrade pip
 sudo pip install bottle pyyaml -y
-sudo pip install gdrivefs
 
 echo "Installing Ruby..."
 \curl -sSL https://get.rvm.io | bash -s stable --ruby
