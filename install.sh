@@ -3,7 +3,8 @@
 # Install packages
 echo "Installing Packages...."
 sudo apt-get install vim software-properties-common python-software-properties libbsd-dev libfuse2 pkg-config -y
-sudo apt-get install build-essential libfuse-dev libsqlite3-dev python-pip ibssl-dev vim curl tmux -y
+sudo apt-get install build-essential libfuse-dev libsqlite3-dev -y
+sudo apt-get install python-pip ibssl-dev vim curl tmux -y
 sudo apt-get install cpufrequtils iptables ssh ruby ruby-dev libpq-dev nodejs npm -y
 sudo apt-get install python3 python3-xdg -y
 sudo appt-get install openjdk-8-jdk -y
@@ -16,6 +17,7 @@ sudo apt-get install grive -y
 echo "Installing Python Packages..."
 sudo pip install --upgrade pip
 sudo pip install bottle pyyaml -y
+sudo pip install gdrivefs
 
 echo "Installing Ruby..."
 \curl -sSL https://get.rvm.io | bash -s stable --ruby
