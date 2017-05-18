@@ -3,7 +3,7 @@ echo "Copying Dotfiles..."
 cd ~/Projects/dotfiles
 
 cp .bashrc ~/.bashrc
-cp .tmux.conf ~/.tmux.conf
+sudo cp .tmux.conf ~/.tmux.conf
 tmux source-file ~/.tmux.conf
 
 sudo cp sshstart /usr/local/bin/sshstart

@@ -98,7 +98,8 @@ alias l='ls -CF'
 # my aliases
 alias sd='cd /media/removable/PROJECTS/Projects'
 alias cdp='cd ~/Projects'
-alias df-backup="sh ~/Projects/dotfiles/backup.sh"
+alias backupdf="sh ~/Projects/dotfiles/backup.sh"
+alias loaddf="sh ~/Projects/dotfiles/load.sh"
 alias cdd="cd ~/Projects/dotfiles"
 
 # Add an "alert" alias for long running commands.  Use like so:
