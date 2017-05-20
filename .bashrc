@@ -101,6 +101,7 @@ alias cdp='cd ~/Projects'
 alias backupdf="sh ~/Projects/dotfiles/backup.sh"
 alias loaddf="sh ~/Projects/dotfiles/load.sh"
 alias cdd="cd ~/Projects/dotfiles"
+alias node="nodejs"
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
