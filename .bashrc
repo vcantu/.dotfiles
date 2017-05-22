@@ -96,12 +96,13 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 # my aliases
-alias sd='cd /media/removable/PROJECTS/Projects'
-alias cdp='cd ~/Projects'
-alias backupdf="sh ~/Projects/dotfiles/backup.sh"
-alias loaddf="sh ~/Projects/dotfiles/load.sh"
-alias cdd="cd ~/Projects/dotfiles"
+alias sd='cd /media/removable/PROJECTS'
+alias cdd='cd ~/Dropbox'
+alias backupdf="sh ~/Dropbox/dotfiles/backup.sh"
+alias loaddf="sh ~/Dropbox/dotfiles/load.sh"
+alias cddf="cd ~/Dropox/dotfiles"
 alias node="nodejs"
+alias dropbox="dropbox.py"
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -127,6 +128,9 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# Start Dropbox if not already running
+dropbox start >> /dev/null
+
 PROMPT_DIRTRIM=3
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
@@ -134,3 +138,4 @@ export PATH="$PATH:$HOME/.rvm/bin"
 
 export NVM_DIR="/home/vcantu/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+(nohup node ~/.crouton-clipboard/server.js > /dev/null 2>&1 &)                                                                          
