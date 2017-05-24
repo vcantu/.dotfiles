@@ -136,6 +136,9 @@ PROMPT_DIRTRIM=3
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
 
+# Add NACL_SDK_ROOT
+export NACL_SDK_ROOT=home/vcantu/nacl_sdk/pepper_49
+
 export NVM_DIR="/home/vcantu/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 (nohup node ~/.crouton-clipboard/server.js > /dev/null 2>&1 &)                                                                          
