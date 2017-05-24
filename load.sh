@@ -2,6 +2,9 @@
 echo "Copying Dotfiles..."
 cd ~/Dropbox/dotfiles
 
+echo "Pulling from Git..."
+git pull origin master
+
 cp .bashrc ~/.bashrc
 cp .xinitrc ~/.xinitrc
 cp config ~/.config/i3/config
