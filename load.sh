@@ -4,6 +4,7 @@ cd ~/Projects/dotfiles
 
 cp .bashrc ~/.bashrc
 cp .xinitrc ~/.xinitrc
+cp config .config/i3/config
 sudo cp .tmux.conf ~/.tmux.conf
 tmux source-file ~/.tmux.conf
 
