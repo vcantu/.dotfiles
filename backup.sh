@@ -13,6 +13,8 @@ cp ~/.xinitrc .
 echo "Backing up .config/i3/config"
 cp ~/.config/i3/config .
 
+echo "Backing up /etc/crouton/xiwi.conf"
+cp /etc/crouton/xiwi.conf .
 
 
 echo "Saving to GitHub..."
