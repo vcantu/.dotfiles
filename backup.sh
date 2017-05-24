@@ -1,5 +1,5 @@
 #!/bin/bash
-cd ~/Projects/dotfiles
+cd ~/Dropbox/dotfiles
 
 echo "Backing up .bashrc..."
 cp ~/.bashrc .
