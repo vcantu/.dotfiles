@@ -3,6 +3,7 @@ echo "Copying Dotfiles..."
 cd ~/Projects/dotfiles
 
 cp .bashrc ~/.bashrc
+cp .xinitrc ~/.xinitrc
 sudo cp .tmux.conf ~/.tmux.conf
 tmux source-file ~/.tmux.conf
 

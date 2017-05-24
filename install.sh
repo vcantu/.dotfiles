@@ -6,7 +6,7 @@ sudo apt-get install vim software-properties-common python-software-properties l
 sudo apt-get install build-essential libfuse-dev libsqlite3-dev -y
 sudo apt-get install python-pip vim curl tmux -y
 sudo apt-get install cpufrequtils iptables ssh ruby ruby-dev libpq-dev nodejs npm -y
-sudo apt-get install python3 python3-xdg -y
+sudo apt-get install python3 python3-xdg rofi -y
 sudo apt-get install openjdk-8-jdk -y
 
 echo "Installing Grive"

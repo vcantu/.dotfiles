@@ -40,7 +40,7 @@ bindsym $mod+d exec dmenu_run
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
-# bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+# bindsym $mod+d exec rofi -color-window "#fdf6e3, #002b36, #000000" -color-normal "#fdf6e3, #002b36, #eee8d5, #586e75, #eee8d5" -color-active "#fdf6e3, #268bd2, #eee8d5, #268bd2, #fdf6e3" -color-urgent "#fdf6e3, #dc322f, #eee8d5, #dc322f, #fdf6e3"
 
 # change focus
 bindsym $mod+j focus left
