@@ -3,8 +3,8 @@ You probably don't care about my actual dotfiles, but you can use the installati
 
 ### To Install...
 ```
-cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
-~/.dropbox-dist/dropboxd
+sudo apt-get install dropbox
+drobox start -i
 ```
 
 Then run any or all of the installation scripts:
