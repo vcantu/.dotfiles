@@ -3,11 +3,8 @@ You probably don't care about my actual dotfiles, but you can use the installati
 
 ### To Install...
 ```
-cd
-sudo apt-get install git
-mkdir Projects
-cd Projects
-git clone https://github.com/vcantu/dotfiles.git
+cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
+~/.dropbox-dist/dropboxd
 ```
 
 Then run any or all of the installation scripts:
