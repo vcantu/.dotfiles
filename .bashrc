@@ -102,7 +102,6 @@ alias backupdf="sh ~/Dropbox/dotfiles/backup.sh"
 alias loaddf="sh ~/Dropbox/dotfiles/load.sh"
 alias cddf="cd ~/Dropox/dotfiles"
 alias node="nodejs"
-alias dropbox="dropbox.py"
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
