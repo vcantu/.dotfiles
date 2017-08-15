@@ -3,8 +3,9 @@ You probably don't care about my actual dotfiles, but you can use the installati
 
 ### To Install...
 ```
-sudo apt-get install dropbox
+sudo apt-get install nautilus-dropbox
 drobox start -i
+.dropbox-dist/dropboxd
 ```
 
 Then run any or all of the installation scripts:
