@@ -1,5 +1,5 @@
 #!/bin/bash
-WEBSTORM="WebStorm-2017.1.3.tar.gz"
+WEBSTORM="WebStorm-2017.2.1.tar.gz"
 IDEA="ideaIU-2017.1.3.tar.gz"
 ANDROID="android-studio-ide-162.3934792-linux.zip"
 
