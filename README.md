@@ -42,12 +42,14 @@ Also also make sure the names of the variables at the top of the script match th
 Contains some commands to customize the ChromeOS Shell (crosh) and some preferences for the [Secure Shell App](https://chrome.google.com/webstore/detail/secure-shell/pnhechapfaindjhompbnflcldabbghjo?hl=en)
 
 
-# Setting Up Aliases in crosh
-# copy and paste these commands
+### Setting Up Aliases in crosh
+### copy and paste these commands
 
+```
 echo "alias enter=\"sudo enter-chroot -n ubuntu\"" >> ~/.bashrc
 echo "alias start=\"sudo startxiwi\"" >> ~/.bashrc
 echo "alias ssh=\"sudo enter-chroot -b sshstart\"" >> ~/.bashrc
 echo "alias killall=\"sudo unmount-chroot -fay\"" >> ~/.bashrc
 echo "alias tab=\"sudo startxiwi -T\"" >> ~/.bashrc
 echo "alias xorg=\"sudo enter-chroot -X xorg xinit\"" >> ~/.bashrc
+```
