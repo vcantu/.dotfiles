@@ -1,11 +1,14 @@
 # .files
 You probably don't care about my actual dotfiles, but you can use the installation and backup scripts as a reference when creating your own dotfiles.
 
+### Install Crouton
+sudo sh ~/Downloads/crouton -r yakkety -n ubuntu -t core,xiwi,xorg,keyboard,cli-extra,audio,extension,touch
+
+
 ### To Install...
 ```
-sudo apt-get install nautilus-dropbox
-drobox start -i
-.dropbox-dist/dropboxd
+sudo apt-get install git
+git clone https://github.com/vcantu/dotfiles.git
 ```
 
 Then run any or all of the installation scripts:
@@ -37,3 +40,14 @@ Also also make sure the names of the variables at the top of the script match th
 
 ## crosh
 Contains some commands to customize the ChromeOS Shell (crosh) and some preferences for the [Secure Shell App](https://chrome.google.com/webstore/detail/secure-shell/pnhechapfaindjhompbnflcldabbghjo?hl=en)
+
+
+# Setting Up Aliases in crosh
+# copy and paste these commands
+
+echo "alias enter=\"sudo enter-chroot -n ubuntu\"" >> ~/.bashrc
+echo "alias start=\"sudo startxiwi\"" >> ~/.bashrc
+echo "alias ssh=\"sudo enter-chroot -b sshstart\"" >> ~/.bashrc
+echo "alias killall=\"sudo unmount-chroot -fay\"" >> ~/.bashrc
+echo "alias tab=\"sudo startxiwi -T\"" >> ~/.bashrc
+echo "alias xorg=\"sudo enter-chroot -X xorg xinit\"" >> ~/.bashrc
