@@ -2,7 +2,9 @@
 You probably don't care about my actual dotfiles, but you can use the installation and backup scripts as a reference when creating your own dotfiles.
 
 ### Install Crouton
+```
 sudo sh ~/Downloads/crouton -r yakkety -n ubuntu -t core,xiwi,xorg,keyboard,cli-extra,audio,extension,touch
+```
 
 
 ### To Install...
