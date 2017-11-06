@@ -8,7 +8,7 @@ sudo sh ~/Downloads/crouton -r yakkety -n ubuntu -t core,xiwi,xorg,keyboard,cli-
 ### To Install...
 ```
 sudo apt-get install git
-git clone https://github.com/vcantu/dotfiles.git
+git clone https://github.com/vcantu/.dotfiles.git
 ```
 
 Then run any or all of the installation scripts:
