@@ -43,7 +43,7 @@ Contains some commands to customize the ChromeOS Shell (crosh) and some preferen
 
 
 ### Setting Up Aliases in crosh
-### copy and paste these commands
+Copy and paste these commands
 
 ```
 echo "alias enter=\"sudo enter-chroot -n ubuntu\"" >> ~/.bashrc
