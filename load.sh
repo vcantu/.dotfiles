@@ -1,6 +1,5 @@
-#!/bin/bash
 echo "Copying Dotfiles..."
-cd ~/Dropbox/dotfiles
+cd ~/.dotfiles
 
 echo "Pulling from Git..."
 git pull origin master
