@@ -43,7 +43,7 @@ esac
 # uncomment for a colored prompt, if the terminal has the capability; turned
 # off by default to not distract the user: the focus in a terminal window
 # should be on the output of commands, not on the prompt
-force_color_prompt=yes
+#force_color_prompt=yes
 
 if [ -n "$force_color_prompt" ]; then
     if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
@@ -56,12 +56,8 @@ if [ -n "$force_color_prompt" ]; then
     fi
 fi
 
-parse_git_branch() {
-     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
-}
-
 if [ "$color_prompt" = yes ]; then
-    PS1='\[\033[6;32m\]\u\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m$(parse_git_branch)$ '
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
@@ -95,13 +91,6 @@ fi
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
-# my aliases
-alias sd='cd /media/removable/PROJECTS'
-alias cdd='cd ~/Dropbox'
-alias backupdf="sh ~/Dropbox/dotfiles/backup.sh"
-alias loaddf="sh ~/Dropbox/dotfiles/load.sh"
-alias cddf="cd ~/Dropox/dotfiles"
-alias node="nodejs"
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -127,17 +116,5 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# Start Dropbox if not already running
-dropbox start >> /dev/null
-
-PROMPT_DIRTRIM=3
-
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
-
-# Add NACL_SDK_ROOT
-export NACL_SDK_ROOT=home/vcantu/nacl_sdk/pepper_49
-
 export NVM_DIR="/home/vcantu/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-(nohup node ~/.crouton-clipboard/server.js > /dev/null 2>&1 &)                                                                          
