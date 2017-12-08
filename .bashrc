@@ -97,10 +97,10 @@ alias la='ls -A'
 alias l='ls -CF'
 # my aliases
 alias sd='cd /media/removable/PROJECTS'
-alias cdd='cd ~/Dropbox'
-alias backupdf="sh ~/Dropbox/dotfiles/backup.sh"
-alias loaddf="sh ~/Dropbox/dotfiles/load.sh"
-alias cddf="cd ~/Dropox/dotfiles"
+alias cdd='cd ~/.dotfiles'
+alias backupdf="sh ~/dotfiles/backup.sh"
+alias loaddf="sh ~/.dotfiles/load.sh"
+alias cddf="cd ~/.dotfiles"
 alias node="nodejs"
 
 # Add an "alert" alias for long running commands.  Use like so:
@@ -126,9 +126,6 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-
-# Start Dropbox if not already running
-dropbox start >> /dev/null
 
 PROMPT_DIRTRIM=3
 
