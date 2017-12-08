@@ -98,7 +98,7 @@ alias l='ls -CF'
 # my aliases
 alias sd='cd /media/removable/PROJECTS'
 alias cdd='cd ~/.dotfiles'
-alias backupdf="sh ~/dotfiles/backup.sh"
+alias backupdf="sh ~/.dotfiles/backup.sh"
 alias loaddf="sh ~/.dotfiles/load.sh"
 alias cddf="cd ~/.dotfiles"
 alias node="nodejs"
@@ -138,3 +138,6 @@ export NACL_SDK_ROOT=home/vcantu/nacl_sdk/pepper_49
 export NVM_DIR="/home/vcantu/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 (nohup node ~/.crouton-clipboard/server.js > /dev/null 2>&1 &)                                                                          
+
+# added by Anaconda 2.3.0 installer
+export PATH="/home/vcantu/.anaconda/bin:$PATH"
