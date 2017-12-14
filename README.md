@@ -3,7 +3,7 @@ You probably don't care about my actual dotfiles, but you can use the installati
 
 ### Install Crouton
 ```
-sudo sh ~/Downloads/crouton -r yakkety -n ubuntu -t core,xiwi,xorg,keyboard,cli-extra,audio,extension,touch
+sudo sh ~/Downloads/crouton -r bionic -n ubuntu -t core,xiwi,xorg,keyboard,cli-extra,audio,extension,touch
 ```
 
 
