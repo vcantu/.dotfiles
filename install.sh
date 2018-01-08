@@ -4,29 +4,15 @@
 echo "Installing Packages...."
 sudo apt-get install software-properties-common python-software-properties libbsd-dev libfuse2 pkg-config -y
 sudo apt-get install build-essential libfuse-dev libsqlite3-dev -y
-sudo apt-get install vim curl tmux -y
-sudo apt-get install cpufrequtils iptables ssh ruby ruby-dev libpq-dev nodejs npm -y
+sudo apt-get install vim curl -y
+sudo apt-get install cpufrequtils ssh libpq-dev -y
 sudo apt-get install openjdk-8-jdk -y
-
-echo "Installing Ruby..."
-\curl -sSL https://get.rvm.io | bash -s stable --ruby
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.0/install.sh | bash
-echo "Installing Bundler"
-gem install bundler
 
 echo "Installing Heroku..."
 sudo add-apt-repository "deb https://cli-assets.heroku.com/branches/stable/apt ./"
 curl -L https://cli-assets.heroku.com/apt/release.key | sudo apt-key add -
 sudo apt-get update -y
 sudo apt-get install heroku -y
-
-echo "Installing Mongo db..."
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10
-echo 'deb http://downloads-distro.mongodb.org/repo/debian-sysvinit dist 10gen' | sudo tee /etc/apt/sources.list.d/mongodb.list
-sudo apt-get update -y
-sudo apt-get -y --no-install-recommends install adduser mongodb-org
-sudo mkdir /data
-sudo mkdir /data/db
 
 echo "Updating git credentials"
 git config --global user.email "viviano.cantu@gmail.com"
