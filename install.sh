@@ -8,6 +8,8 @@ sudo apt-get install vim curl -y
 sudo apt-get install cpufrequtils ssh libpq-dev -y
 sudo apt-get install openjdk-8-jdk -y
 
+echo "exec i3" > ~/.xinitrc
+
 echo "Installing Heroku..."
 sudo add-apt-repository "deb https://cli-assets.heroku.com/branches/stable/apt ./"
 curl -L https://cli-assets.heroku.com/apt/release.key | sudo apt-key add -
