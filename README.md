@@ -54,4 +54,5 @@ echo "alias ssh=\"sudo enter-chroot -b sshstart\"" >> ~/.bashrc
 echo "alias killall=\"sudo unmount-chroot -fay\"" >> ~/.bashrc
 echo "alias tab=\"sudo startxiwi -T\"" >> ~/.bashrc
 echo "alias xorg=\"sudo enter-chroot -X xorg xinit\"" >> ~/.bashrc
+echo "alias xinit=\"sudo enter-chroot xinit\"" >> ~/.bashrc
 ```
