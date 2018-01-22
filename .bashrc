@@ -98,7 +98,7 @@ alias l='ls -CF'
 # my aliases
 alias sd='cd /media/removable/PROJECTS'
 alias cdd='cd ~/.dotfiles'
-alias backupdf="sh ~/dotfiles/backup.sh"
+alias backupdf="sh ~/.dotfiles/backup.sh"
 alias loaddf="sh ~/.dotfiles/load.sh"
 alias cddf="cd ~/.dotfiles"
 alias node="nodejs"
@@ -133,3 +133,4 @@ PROMPT_DIRTRIM=3
 export NACL_SDK_ROOT=home/vcantu/nacl_sdk/pepper_49
 
 (nohup node ~/.crouton-clipboard/server.js > /dev/null 2>&1 &)      
+xrdb ~/.Xresources
